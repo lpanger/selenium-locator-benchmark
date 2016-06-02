@@ -62,7 +62,24 @@ namespace SeLocatorBench
                     break;
             }
             
-            driver.Navigate().GoToUrl("https://qa.builddirect.com/Laminate-Flooring/Piers-Hickory/ProductDisplay_6951_p1_10100592.aspx");
+            driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl("https://www.builddirect.com/Laminate-Flooring/Piers-Hickory/ProductDisplay_6951_p1_10100592.aspx");
+
+//            var stopw = new Stopwatch();
+//            try
+//            {
+//                stopw.Start();
+//                driver.FindElements(By.ClassName("abc"));
+//            }
+//            catch (Exception)
+//            {
+//                Console.WriteLine("exception thrown");
+//            }
+//            finally
+//            {
+//                stopw.Stop();
+//                Console.WriteLine($"Took {stopw.ElapsedMilliseconds} ms");
+//            }
 
             var total = new Dictionary<string, List<long>>();
 
